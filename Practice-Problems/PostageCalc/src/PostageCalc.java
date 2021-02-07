@@ -33,9 +33,13 @@ public class PostageCalc {
             System.out.print(postageCosts[i + 1]);
             System.out.println(" cents");
          }
-         if( userLetterWeight >= 13 ) {
+         if( userLetterWeight == 13 ) {
         	foundWeight = true;
-            System.out.println("Letter is too HEAVY for USPS " +
+            System.out.print("Postage for USPS first class mail is ");
+            System.out.print(postageCosts[13]);
+            System.out.println(" cents");
+        	System.out.print("The next higher weight is ");
+            System.out.println("too HEAVY for USPS " +
                         "first class mail.");
             }
          }
